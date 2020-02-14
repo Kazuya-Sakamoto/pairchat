@@ -1,0 +1,12 @@
+{% extends 'talk/base.html' %}
+{% load static %}
+{% block content %}
+
+{% for item in object_list %}
+{{ item.talk }}
+{{ item.created_at }}
+{{ item.talk_type }}
+{{ item.user_id }}
+{% endfor %}
+
+{% endblock content %}
