@@ -2,9 +2,21 @@ body {
   background-image: url("/static/images/accounts.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  .top-bar{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    // background-color: red;
+    padding: 30px 30px 30px 0px;
+    color: #FFF;
+    text-decoration: none;
+  }
+  .top-bar:hover{
+    color: red;
+  }
   .header{
     width: 100vw;
-    height: 210px;
+    height: 100px;
     // background-color: red;
     padding: 100px;
     text-align: center;
@@ -15,14 +27,14 @@ body {
   }
   .content{
     width: 50vw;
-    height: 70vh;
+    height: 65vh;
     margin: 0 auto;
     position: relative;
     .form-position{
       width: 70%;
       height: 10px;
       margin: 0 auto;
-      padding: 45px;
+      padding: 47px;
       #id_username{
         width: 80%;
       }
@@ -53,9 +65,9 @@ body {
 }
 .nice-wrap{
   position: relative;
-  width: 500px;
+  width: 560px;
   height: 100px;
- 
+  // padding: 20px;
   margin: 0 auto;
 }
 
