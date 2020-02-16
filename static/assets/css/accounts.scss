@@ -1,0 +1,89 @@
+body {
+  background-image: url("/static/images/accounts.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .header{
+    width: 100vw;
+    height: 210px;
+    // background-color: red;
+    padding: 100px;
+    text-align: center;
+    color: #FFF;
+    h1{
+      font-size: 65px;
+    }
+  }
+  .content{
+    width: 50vw;
+    height: 70vh;
+    margin: 0 auto;
+    position: relative;
+    .form-position{
+      width: 70%;
+      height: 10px;
+      margin: 0 auto;
+      padding: 45px;
+      #id_username{
+        width: 80%;
+      }
+      #id_password1{
+        width: 80%;
+      }
+      #id_email{
+        width: 80%;
+      }
+      #id_password2{
+        width: 80%;
+      }
+      ul{
+        color: #FFF;
+      }
+    }
+    .nice-wrap-submit{
+      width: 500px;
+      height: 100px;
+      padding: 20px;
+      margin-left: 250px;
+      margin-top: 60px;
+      button{
+        width: 120px;
+      }
+    }
+  }
+}
+.nice-wrap{
+  position: relative;
+  width: 500px;
+  height: 100px;
+ 
+  margin: 0 auto;
+}
+
+.nice-label{
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  font-size: 16px;
+  color: #a0a0a0;
+  transition: all 0.25s ease;
+  
+  &.focus{
+    top: -25px;
+    left: 5px;
+    font-size: 14px;
+    color: #fff;
+  }
+}
+
+.nice-textbox{
+  position: relative;
+  display: block;
+  width: 70%;
+  margin-top: 50px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #a0a0a0;
+  outline: none;
+}

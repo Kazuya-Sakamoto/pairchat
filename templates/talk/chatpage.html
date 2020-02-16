@@ -1,12 +1,33 @@
 {% extends 'talk/base.html' %}
 {% load static %}
-{% block content %}
 
+{% block content %}
+<!-- <div class="message-box">
+  <div class="message-box_space"> -->
 {% for item in object_list %}
+  <div class="message-box">
+    <div class="message-box_profile">
+    </div>
+    <div class="message-box_space">
+      <div class="message-box_space_name">
+        {{ item.user_id }}
+        <div class="message-box_space_name_time">
+          {{ item.created_at }}
+        </div>
+      </div>
+      <div class="message-box_space_chatspase">
+        {{ item.talk }}
+        {{ item.talk_type }}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+<!-- {% for item in object_list %}
 {{ item.talk }}
 {{ item.created_at }}
 {{ item.talk_type }}
 {{ item.user_id }}
-{% endfor %}
+{% endfor %} -->
 
 {% endblock content %}

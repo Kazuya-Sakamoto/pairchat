@@ -1,0 +1,9 @@
+.message-box { width: 83vw; padding: 10px; }
+
+.message-box .message-box_space { width: 90%; background-color: green; margin-left: 100px; }
+
+.message-box .message-box_space .message-box_space_name_time { background-color: hotpink; display: inline; }
+
+.message-box .message-box_space .message-box_space_chatspase { width: 100%; background-color: red; }
+
+/*# sourceMappingURL=chat.css.map */

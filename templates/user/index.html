@@ -1,0 +1,15 @@
+{% extends 'user/base.html' %}
+{% block content %}
+<form method="post">{% csrf_token %}
+  {{ form.as_p }}
+  {% if user.id  %}
+    <p>ログインしました．</p>
+    <p>こんにちは，{{ user.username }}さん</p>
+    <a href="{% url 'logout' %}">ログアウトする</a>
+    {% else %}
+    <a href="{% url 'login' %}">ログイン</a>
+    <a href="{% url 'create_account' %}">アカウント作成</a>
+    {% endif %}
+  <a href="{% url 'talk:list' %}"><input type="submit" value="ログイン" ></a>
+</form>
+{% endblock content %}

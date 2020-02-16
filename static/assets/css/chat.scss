@@ -1,0 +1,21 @@
+.message-box{
+  width: 83vw;
+  // height: 250px;
+  padding: 10px;
+  // background-color: wheat;
+  .message-box_space{
+    width: 90%;
+    // height: 100%;
+    background-color: green;
+    margin-left: 100px;
+    .message-box_space_name_time{
+      background-color: hotpink;
+      display: inline;
+    }
+    .message-box_space_chatspase{
+      width: 100%;
+      // height: 100%;
+      background-color: red;
+    }
+  }
+}

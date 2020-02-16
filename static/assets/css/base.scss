@@ -1,0 +1,119 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  // background-color: red;
+  .side-bar{
+    width: 15vw;
+    height: 100vh;
+    background-color: #33FFFF;
+    position: fixed;
+    overflow: scroll;
+  }
+  .main-box{
+    width: 85vw;
+    height: 100vh;
+    float: right;
+    // background-color: blue;
+    .main-header{
+      height: 10vh;
+      width: 85vw;
+      // background-color: red;
+      padding: 8px 8px 8px 20px;
+      position: relative;
+      box-shadow: 0 32px var(--saf-0);
+      border-bottom: 1px solid rgba(var(--sk_foreground_low_solid,221,221,221),1);
+      // .main-header_left{
+      //   width: 75%;
+      //   height: 100%;
+      //   flex: 1;
+      //   height: 60px;
+      //   min-width: 0;
+      //   padding: 8px 8px 8px 20px;
+      //   position: relative;
+      //   background-color: black;
+      // }
+      // .main-header_right{
+      //   flex-shrink: 0;
+      //   height: 60px;
+      //   float: right;
+      //   align-items: center;
+      //   width: 20%;
+      //   height: 100px;
+      //   background-color: green;
+      // }
+      .main-header_left {
+        display: table-cell;
+        color: #FFF;
+        width: 65vw;
+        background-color: palegreen;
+        vertical-align: middle;
+        margin: 20px;
+        padding: 20px;
+      }
+        
+      .main-header_right{
+        display: table-cell;
+        color: #FFF;
+        width:20vw;
+        height: 7.5vh;
+        background-color: black;
+        vertical-align: middle;
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+    .main-message{
+      width: 85vw;
+      height: 80vh;
+      // margin: 30px 0px 0px 0px;
+      overflow: scroll;
+      .message_kit__gutter{
+        padding: 5px;
+      }
+    }
+    .main-footer{
+      font-size: 15px;
+      line-height: 1.46668;
+      font-weight: 400;
+      color: rgba(var(--sk_primary_foreground,29,28,29),1);
+      font-variant-ligatures: common-ligatures;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      background-color: red;
+      width: 85%;
+      height: 100px;
+      position: absolute;
+      bottom: 0;
+      .main-footer_box{
+        display: flex;
+        padding: 0 20px;
+        background-color: olive;
+        width: 100%;
+        height: 100%;
+        .main-footer_box_message{
+          width: 90%;
+          height: 90%;
+          padding: 5px;
+          background-color: darkblue;
+        }
+        .btn-message{
+          width: 120px;
+          height: 100px;
+          padding: 40px 20px 20px 10px;
+          // background-color: wheat;
+          .btn{
+            width: 100px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .main-header{
+//   height: 10vh;
+//   width: 85vw;
+//   background-color: red;
+//   padding: 8px 8px 8px 20px;
+// }
